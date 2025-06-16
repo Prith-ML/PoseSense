@@ -29,6 +29,7 @@ In this project, the LSTM takes in the sequence of joint coordinates and outputs
 This is a video from a live 3D animation of human pose data, rendered using the NTU RGB+D 25-joint skeleton format.
 Each green dot in the image is a 3D point corresponding to a joint in the body (like the wrist, elbow, or shoulder), and the yellow lines represent bones — that is, the anatomical connections between those joints.
 
+When a pose sequence is passed to the LSTM, each time step processes one frame's vector, updating the hidden state of the network. As the sequence unfolds — wrists moving inward, then pausing at the center, then retracting — the LSTM learns to associate this pattern with the "clapping" label. It recognizes not just positions, but the trajectory and timing of joint movements.
 
 
 
