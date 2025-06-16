@@ -1,6 +1,7 @@
 # Live-Human-Action-Detection-Project
 
 ![skeleton gif](https://github.com/user-attachments/assets/a554513e-9a1c-4451-9cb2-93263b69591e)
+
 The Live Human Action Detection Project is a computer vision application designed to recognize and classify human actions in real-time using only a webcam. It combines the power of pose estimation and deep learning to understand body movements and categorize them into predefined actions such as Clapping, Hand Waving, and Hopping.
 
 The main goals of the project are:
@@ -12,6 +13,8 @@ The main goals of the project are:
 3. To provide a visual and interactive interface that shows real-time feedback to the user.
 
 4. To explore pose-based action recognition without relying on raw RGB video or depth data.
+
+
 
 ![Skeletal joints video](https://github.com/user-attachments/assets/a2990d33-0f6c-4015-a325-75c5a9436a7f)
 
