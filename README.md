@@ -26,6 +26,11 @@ The core of the model is an LSTM (Long Short-Term Memory) network. LSTMs are a t
 In this project, the LSTM takes in the sequence of joint coordinates and outputs a prediction: a label representing the recognized action. For example, based on how the joints move over a few seconds, it might output “clapping” or “hopping.”
 
 <img src="https://github.com/user-attachments/assets/a2990d33-0f6c-4015-a325-75c5a9436a7f" width="50%"/>
+This is a video from a live 3D animation of human pose data, rendered using the NTU RGB+D 25-joint skeleton format.
+Each green dot in the image is a 3D point corresponding to a joint in the body (like the wrist, elbow, or shoulder), and the yellow lines represent bones — that is, the anatomical connections between those joints.
+
+
+
 
 
 
