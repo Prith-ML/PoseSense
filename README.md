@@ -27,6 +27,9 @@ In this project, the LSTM takes in the sequence of joint coordinates and outputs
 
 ![Skeletal joints video](https://github.com/user-attachments/assets/a2990d33-0f6c-4015-a325-75c5a9436a7f)
 
+<img src="https://github.com/user-attachments/assets/a2990d33-0f6c-4015-a325-75c5a9436a7f" width="50%"/>
+
+
 
 
 <img width="271" alt="skeletal visual" src="https://github.com/user-attachments/assets/8e92e860-7f38-4c0d-9313-58a4e2ef8975" />
