@@ -25,8 +25,6 @@ Human actions are dynamic — they unfold over time. So, rather than classifying
 The core of the model is an LSTM (Long Short-Term Memory) network. LSTMs are a type of recurrent neural network (RNN) designed for learning from sequences — they’re particularly well-suited for recognizing patterns that depend on time, like human gestures or actions.
 In this project, the LSTM takes in the sequence of joint coordinates and outputs a prediction: a label representing the recognized action. For example, based on how the joints move over a few seconds, it might output “clapping” or “hopping.”
 
-![Skeletal joints video](https://github.com/user-attachments/assets/a2990d33-0f6c-4015-a325-75c5a9436a7f)
-
 <img src="https://github.com/user-attachments/assets/a2990d33-0f6c-4015-a325-75c5a9436a7f" width="50%"/>
 
 
