@@ -15,24 +15,15 @@ The main goals of the project are:
 4. To explore pose-based action recognition without relying on raw RGB video or depth data.
 
 
-                   ┌───────────────┐
-                   │   Webcam      │
-                   └──────┬────────┘
-                          ↓
-                 ┌─────────────────────┐
-                 │ MediaPipe Pose (33) │
-                 └──────┬──────────────┘
-                          ↓
-  convert_mediapipe_to_ntu25()  ← re-orders, averages ▶ 25 joints
-                          ↓
-        normalise_skeleton()   ← centre, rotate, scale
-                          ↓
-      Temporal queue (T=25)    ← sliding window
-                          ↓
-            LSTM (2×128)       ← PyTorch, many-to-one
-                          ↓
-         Softmax + label      → overlay text / bars on frame
+# How the system works 
 
+Instead of analyzing the raw video feed, the system uses a real-time pose estimation engine (e.g., MediaPipe, OpenPose) to extract 3D joint keypoints from each frame. Each person’s pose is converted into a set of vectors — for instance, the x, y, z positions of the shoulders, elbows, knees, etc. This provides a simplified but highly informative representation of body position and posture.
+The key benefit is that this is much lighter than video analysis. You’re working with maybe 33 joints per frame instead of hundreds of thousands of pixels.
+
+Human actions are dynamic — they unfold over time. So, rather than classifying a single frame, this system builds a temporal window of pose frames, typically spanning around 30–60 frames (1–2 seconds of motion). This sequence of pose data becomes the input to the neural network.
+
+The core of the model is an LSTM (Long Short-Term Memory) network. LSTMs are a type of recurrent neural network (RNN) designed for learning from sequences — they’re particularly well-suited for recognizing patterns that depend on time, like human gestures or actions.
+In this project, the LSTM takes in the sequence of joint coordinates and outputs a prediction: a label representing the recognized action. For example, based on how the joints move over a few seconds, it might output “clapping” or “hopping.”
 
 ![Skeletal joints video](https://github.com/user-attachments/assets/a2990d33-0f6c-4015-a325-75c5a9436a7f)
 
