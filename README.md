@@ -40,3 +40,5 @@ When a pose sequence is passed to the LSTM, each time step processes one frame's
 
 
 <img width="500" alt="skeletal visual" src="https://github.com/user-attachments/assets/8e92e860-7f38-4c0d-9313-58a4e2ef8975" />
+
+This visualization represents a centered and aligned skeleton frame, a crucial preprocessing step in pose-based deep learning. Here, the skeleton has been translated so that the hip joint is at the origin (0, 0, 0), and the coordinate axes are reoriented to follow a canonical frame: the X-axis aligns with the shoulders, the Y-axis follows the spine vertically, and the Z-axis points forward in depth. This normalization is done to remove variations caused by the subject’s position, orientation, or camera angle, ensuring that identical actions (like clapping or waving) result in consistent joint trajectories regardless of how or where the action is performed. By standardizing the pose data in this way, the LSTM model can focus purely on the motion pattern itself, rather than being confused by irrelevant spatial differences. 
