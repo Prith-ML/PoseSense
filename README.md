@@ -14,6 +14,7 @@ The main goals of the project are:
 
 4. To explore pose-based action recognition without relying on raw RGB video or depth data.
 
+
                    ┌───────────────┐
                    │   Webcam      │
                    └──────┬────────┘
@@ -31,6 +32,7 @@ The main goals of the project are:
             LSTM (2×128)       ← PyTorch, many-to-one
                           ↓
          Softmax + label      → overlay text / bars on frame
+
 
 ![Skeletal joints video](https://github.com/user-attachments/assets/a2990d33-0f6c-4015-a325-75c5a9436a7f)
 
