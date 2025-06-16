@@ -39,4 +39,4 @@ When a pose sequence is passed to the LSTM, each time step processes one frame's
 
 
 
-<img width="600" alt="skeletal visual" src="https://github.com/user-attachments/assets/8e92e860-7f38-4c0d-9313-58a4e2ef8975" />
+<img width="500" alt="skeletal visual" src="https://github.com/user-attachments/assets/8e92e860-7f38-4c0d-9313-58a4e2ef8975" />
