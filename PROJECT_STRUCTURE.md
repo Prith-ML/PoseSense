@@ -16,24 +16,22 @@ PoseSense/
 │       ├── __init__.py        # Models module initialization
 │       └── pytorchModel.pth   # Pre-trained PyTorch model
 │
-├── 📁 docs/                   # Documentation
-│   ├── README.md              # Detailed project documentation
-│   ├── PROJECT_STRUCTURE.md   # This file
-│   ├── CONTRIBUTING.md        # Contribution guidelines
-│   ├── LICENSE                # MIT License
-│   └── Dataset                # Dataset download instructions
-│
 ├── 📁 tests/                  # Testing and diagnostics
 │   └── test_system.py         # Comprehensive system testing
 │
-├── 📁 examples/               # Usage examples (future)
+├── 📁 examples/               # Usage examples
+│   └── basic_usage.py         # Basic usage examples
 │
 ├── 📁 .github/                # GitHub configuration
 │   └── 📁 workflows/          # CI/CD workflows
 │       └── ci.yml             # Continuous integration
 │
 ├── main.py                    # Main entry point
-├── README.md                  # Project overview (root)
+├── README.md                  # Project overview
+├── PROJECT_STRUCTURE.md       # Project structure documentation
+├── CONTRIBUTING.md            # Contribution guidelines
+├── LICENSE                    # MIT License
+├── Dataset                    # Dataset download instructions
 ├── requirements.txt           # Python dependencies
 ├── setup.py                   # Package installation
 └── .gitignore                 # Git ignore patterns

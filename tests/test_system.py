@@ -205,7 +205,7 @@ def main():
     if passed == total:
         print("🎉 All tests passed! Your system is ready to run PoseSense.")
         print("\n🚀 To start the application, run:")
-        print("   python run_demo.py")
+        print("   python main.py")
     else:
         print("⚠️  Some tests failed. Please check the errors above.")
         print("\n🔧 Common solutions:")
