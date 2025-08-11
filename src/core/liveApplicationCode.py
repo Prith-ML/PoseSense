@@ -24,7 +24,7 @@ class SkeletonLSTM(nn.Module):
 # === 2. Load Model ===
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = SkeletonLSTM()
-model.load_state_dict(torch.load("NEWNEWwithnewactionsAlignedqskeleton_lstm.pth", map_location=device))
+model.load_state_dict(torch.load("src/models/pytorchModel.pth", map_location=device))
 model.to(device)
 model.eval()
 
